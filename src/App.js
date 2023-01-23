@@ -28,7 +28,6 @@ function App() {
             <searchContext.Provider
               value={{ search, setSearch, isSearch, setisSearch }}
             >
-              <Header />
               <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/coins/:id" element={<Coinpage />} />

@@ -10,6 +10,7 @@ import { SingleCoin } from "../config/api";
 import { numberWithCommas } from "../components/Banner/Carousel";
 import { CryptoState } from "../CryptoContext";
 import { searchContext } from "../SearchContext";
+import Header from "../components/Header";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -86,6 +87,7 @@ const CoinPage = () => {
 
   return (
     <>
+      <Header />
       <div className={classes.container}>
         <div className={classes.sidebar}>
           <img
