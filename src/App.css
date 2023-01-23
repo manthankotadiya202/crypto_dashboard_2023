@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 
@@ -16,4 +16,5 @@ a {
   padding-right: 0 !important;
   display: flex !important;
   flex-direction: column !important;
+  width: 100% !important;
 }
