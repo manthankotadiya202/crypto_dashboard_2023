@@ -9,9 +9,11 @@ const Homepage = () => {
   setisSearch(true);
   return (
     <>
-      <Header />
-      <Banner />
-      <CoinsTable />
+      <div>
+        <Header />
+        <Banner />
+        <CoinsTable />
+      </div>
     </>
   );
 };

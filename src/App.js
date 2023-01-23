@@ -7,7 +7,7 @@ import Coinpage from "./Pages/Coinpage";
 import Container from "@material-ui/core/Container";
 import { searchContext } from "./SearchContext";
 import { useState } from "react";
-import Header from "./components/Header";
+
 const useStyles = makeStyles(() => ({
   App: {
     backgroundColor: "#14161a",
