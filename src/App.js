@@ -29,7 +29,7 @@ function App() {
               value={{ search, setSearch, isSearch, setisSearch }}
             >
               <Routes>
-                <Route path="/crypto_dashboard_2023" element={<Homepage />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/coins/:id" element={<Coinpage />} />
               </Routes>
             </searchContext.Provider>
