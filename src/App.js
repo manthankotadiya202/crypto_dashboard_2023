@@ -23,14 +23,17 @@ function App() {
   return (
     <>
       <Container maxWidth={false}>
-        <BrowserRouter>
+        <BrowserRouter basename="/crypto_dashboard_2023">
           <div className={classes.App}>
             <searchContext.Provider
               value={{ search, setSearch, isSearch, setisSearch }}
             >
               <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/coins/:id" element={<Coinpage />} />
+                <Route path="/crypto_dashboard_2023" element={<Homepage />} />
+                <Route
+                  path="/crypto_dashboard_2023/coins/:id"
+                  element={<Coinpage />}
+                />
               </Routes>
             </searchContext.Provider>
           </div>
