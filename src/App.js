@@ -30,10 +30,7 @@ function App() {
             >
               <Routes>
                 <Route path="/crypto_dashboard_2023" element={<Homepage />} />
-                <Route
-                  path="/crypto_dashboard_2023/coins/:id"
-                  element={<Coinpage />}
-                />
+                <Route path="/coins/:id" element={<Coinpage />} />
               </Routes>
             </searchContext.Provider>
           </div>
