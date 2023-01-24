@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/styles";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
@@ -10,6 +10,21 @@ import { CryptoState } from "../../CryptoContext";
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+const useStyles = makeStyles((theme) => ({
+  carousel: {
+    height: "50%",
+    display: "flex",
+    alignItems: "center",
+  },
+  carouselItem: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    cursor: "pointer",
+    textTransform: "uppercase",
+    color: "white",
+  },
+}));
 
 const Carousel = () => {
   const [trending, setTrending] = useState([]);
@@ -90,22 +105,5 @@ const Carousel = () => {
     </div>
   );
 };
-
-const useStyles = makeStyles((theme) => ({
-  carousel: {
-    height: "50%",
-    display: "flex",
-    alignItems: "center",
-  },
-  carouselItem: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    cursor: "pointer",
-    textTransform: "uppercase",
-    color: "white",
-    textDecoration: "none",
-  },
-}));
 
 export default Carousel;
