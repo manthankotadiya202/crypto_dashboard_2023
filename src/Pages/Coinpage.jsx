@@ -95,6 +95,7 @@ const CoinPage = () => {
           display: "flex",
           flexDirection: "column",
           height: "100vh",
+          backgroundColor: "#14161a",
         }}
       >
         <Header />
