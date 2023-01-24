@@ -8,7 +8,6 @@ import {
   LinearProgress,
   ThemeProvider,
   Typography,
-  TextField,
   TableBody,
   TableRow,
   TableHead,
@@ -18,7 +17,7 @@ import {
 } from "@material-ui/core";
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-import { CoinList, TrendingCoins } from "../config/api";
+import { CoinList } from "../config/api";
 import { CryptoState } from "../CryptoContext";
 import { searchContext } from "../SearchContext";
 import { numberWithCommas } from "./Banner/Carousel";
